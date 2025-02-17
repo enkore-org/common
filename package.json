@@ -1,6 +1,6 @@
 {
   "name": "@enkore/common",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Anio Software <info@anio.software>",
   "description": "Code that is both used by enkore and @enkore/core.",
   "license": "MIT",
