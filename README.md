@@ -1,3 +1,3 @@
 # @enkore/common
 
-This package contains all code that is used in both enkore and @enkore/core.
+This package contains code that is shared among enkore packages.
