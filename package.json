@@ -16,7 +16,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "@enkore/spec": "^0.44.0",
+    "@enkore/spec": "^0.45.0",
     "@fourtune/core": "^0.1101.0",
     "@fourtune/realm-js": "^0.31010.0",
     "fourtune": "^0.30000.1"
