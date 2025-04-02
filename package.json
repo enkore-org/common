@@ -1,6 +1,6 @@
 {
   "name": "@enkore/common",
-  "version": "0.0.49",
+  "version": "0.0.50",
   "author": "Anio Software <info@anio.software>",
   "description": "Code that is shared among enkore packages.",
   "license": "MIT",
