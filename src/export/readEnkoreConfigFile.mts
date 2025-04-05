@@ -3,7 +3,7 @@ import path from "node:path"
 
 export async function readEnkoreConfigFile(
 	projectRoot: string
-) : Promise<EnkoreConfig> {
+): Promise<EnkoreConfig> {
 	return (
 		//
 		// Appending '#' as a temporary workaround for issue #17114

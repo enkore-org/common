@@ -19,7 +19,7 @@ function inferProjectRoot(): string {
 
 export function getProjectRootFromArgument(
 	root: string | ["inferFromCLIArgs"]
-) : string {
+): string {
 	let projectRoot : string = root as string
 
 	if (Array.isArray(root) && root[0] === "inferFromCLIArgs") {

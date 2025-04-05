@@ -1,6 +1,6 @@
 export function fileNameIndicatesPreprocessable(
 	fileName: string
-) : boolean {
+): boolean {
 	const extensions = [
 		".mts",
 		".ts",
