@@ -1,10 +1,10 @@
-import {findNearestFile} from "@aniojs/node-fs"
+import {findNearestFileSync} from "@aniojs/node-fs"
 import path from "node:path"
 
-export async function findProjectRootFromDirectory(
+export function findProjectRootFromDirectory(
 	startDirectory: string
-): Promise<string|false> {
-	const result = await findNearestFile("enkore.config.mts", startDirectory)
+): string|false {
+	const result = findNearestFileSync("enkore.config.mts", startDirectory)
 
 	if (result === false) return false
 
