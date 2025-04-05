@@ -1,6 +1,5 @@
 import {findProjectRootFromDirectory} from "./findProjectRootFromDirectory.mts"
 import path from "node:path"
-import {validateProjectRoot} from "./validateProjectRoot.mts"
 
 function inferProjectRoot(): string {
 	const projectRoot = findProjectRootFromDirectory(
@@ -18,16 +17,14 @@ function inferProjectRoot(): string {
 	return projectRoot
 }
 
-export async function getProjectRootFromArgument(
+export function getProjectRootFromArgument(
 	root: string | ["inferFromCLIArgs"]
-) : Promise<string> {
+) : string {
 	let projectRoot : string = root as string
 
 	if (Array.isArray(root) && root[0] === "inferFromCLIArgs") {
 		projectRoot = inferProjectRoot()
 	}
-
-	await validateProjectRoot(projectRoot)
 
 	return projectRoot
 }
