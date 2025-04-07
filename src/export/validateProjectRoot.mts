@@ -34,7 +34,7 @@ export async function validateProjectRoot(
 	}
 
 	// check for enkore target package
-	const targetPackageName = `@enkore-target/${projectConfig.target._targetIdentifier}`
+	const targetPackageName = `@enkore-target/${projectConfig.target.name}`
 
 	if (checkIfEnkorePackageIsInstalled(projectRoot, `${targetPackageName}`) === false) {
 		throw new Error(
