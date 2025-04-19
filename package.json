@@ -17,7 +17,7 @@
   "type": "module",
   "devDependencies": {
     "@aniojs/node-fs": "^0.5.3",
-    "@enkore/spec": "^0.238.0",
+    "@enkore/spec": "^0.239.0",
     "@fourtune/core": "^0.1101.0",
     "@fourtune/realm-js": "^1.0.5",
     "fourtune": "^0.30000.1"
