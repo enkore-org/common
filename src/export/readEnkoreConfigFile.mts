@@ -1,4 +1,7 @@
-import type {EnkoreConfig} from "@enkore/spec"
+import {
+	type EnkoreConfig,
+	isEntityOfKind
+} from "@enkore/spec"
 import path from "node:path"
 
 export async function readEnkoreConfigFile(
@@ -17,7 +20,13 @@ export async function readEnkoreConfigFile(
 			`please use the named export "config" instead.`
 		)
 
-		return tmp.default as EnkoreConfig
+		if (!isEntityOfKind(tmp.default, "EnkoreConfig")) {
+			throw new Error(
+				`Config object must be entity of kind 'EnkoreConfig'.`
+			)
+		}
+
+		return tmp.default
 	}
 
 	if (!("config" in tmp)) {
@@ -26,5 +35,11 @@ export async function readEnkoreConfigFile(
 		)
 	}
 
-	return tmp.config as EnkoreConfig
+	if (!isEntityOfKind(tmp.config, "EnkoreConfig")) {
+		throw new Error(
+			`Config object must be entity of kind 'EnkoreConfig'.`
+		)
+	}
+
+	return tmp.config
 }
