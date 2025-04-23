@@ -10,7 +10,7 @@ export async function readEnkoreConfigFile(
 	//
 	// Appending '#' as a temporary workaround for issue #17114
 	//
-	const tmp = await import(
+	const tmp: Record<string, unknown> = await import(
 		path.join(projectRoot, "enkore.config.mts#")
 	)
 
