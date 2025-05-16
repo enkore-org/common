@@ -36,7 +36,7 @@ export async function validateProjectRoot(
 	const projectConfig = await readEnkoreConfigFile(projectRoot)
 
 	// check for "enkore" package
-	if (checkIfEnkorePackageIsInstalled(projectRoot, `enkore`) === false) {
+	if (checkIfEnkorePackageIsInstalled(projectRoot, ["@asint/enkore", "enkore"]) === false) {
 		throw new Error(
 			`The 'enkore' package is not installed at the project root.\n` +
 			`Please make sure you have it installed.`
@@ -44,7 +44,10 @@ export async function validateProjectRoot(
 	}
 
 	// check for enkore target package
-	const targetPackageName = `@enkore-target/${projectConfig.target.name}`
+	const targetPackageName = [
+		`@asint/enkore-target__${projectConfig.target.name}`,
+		`@enkore-target/${projectConfig.target.name}`
+	]
 
 	if (checkIfEnkorePackageIsInstalled(projectRoot, `${targetPackageName}`) === false) {
 		throw new Error(
