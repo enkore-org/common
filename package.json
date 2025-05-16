@@ -4,12 +4,6 @@
   "author": "Anio Software <info@anio.software>",
   "description": "Code that is shared among enkore packages.",
   "license": "MIT",
-  "exports": {
-    ".": {
-      "types": "./dist/default/index.d.mts",
-      "import": "./dist/default/index.mjs"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/enkore-org/common.git"
@@ -21,11 +15,5 @@
     "@fourtune/core": "^0.1101.0",
     "@fourtune/realm-js": "^1.0.5",
     "fourtune": "^0.30000.1"
-  },
-  "scripts": {
-    "prepare": "./node_modules/.bin/fourtune ."
-  },
-  "files": [
-    "./dist/"
-  ]
+  }
 }
