@@ -1,5 +1,5 @@
 import {createHash} from "node:crypto"
-import type {NodePackageJSON} from "@enkore/spec/primitives"
+import type {NodePackageJSON} from "@asint/enkore__spec/primitives"
 
 export function calculateProjectId(
 	projectPackageJSON: NodePackageJSON

@@ -1,7 +1,7 @@
 import {
 	type EnkoreConfig,
 	isEntityOfKind
-} from "@enkore/spec"
+} from "@asint/enkore__spec"
 import path from "node:path"
 
 export async function readEnkoreConfigFile(
