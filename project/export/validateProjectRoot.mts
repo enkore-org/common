@@ -44,14 +44,14 @@ export async function validateProjectRoot(
 	}
 
 	// check for enkore target package
-	const targetPackageName = [
+	const targetPackageNames = [
 		`@asint/enkore-target__${projectConfig.target.name}`,
 		`@enkore-target/${projectConfig.target.name}`
 	]
 
-	if (checkIfEnkorePackageIsInstalled(projectRoot, targetPackageName) === false) {
+	if (checkIfEnkorePackageIsInstalled(projectRoot, targetPackageNames) === false) {
 		throw new Error(
-			`The '${targetPackageName[1]}' package is not installed at the project root.\n` +
+			`The '${targetPackageNames[1]}' package is not installed at the project root.\n` +
 			`Please make sure you have it installed.`
 		)
 	}
