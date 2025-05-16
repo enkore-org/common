@@ -5,12 +5,22 @@ import {resolveImportSpecifierFromProjectRoot} from "./resolveImportSpecifierFro
 
 function checkIfEnkorePackageIsInstalled(
 	projectRoot: string,
-	packageName: string
+	names: string|string[]
 ): boolean {
-	return resolveImportSpecifierFromProjectRoot(
-		projectRoot,
-		`${packageName}/package.json`
-	) !== false
+	const packageNames = Array.isArray(names) ? names : [names]
+
+	for (const packageName of packageNames) {
+		const result = resolveImportSpecifierFromProjectRoot(
+			projectRoot,
+			`${packageName}/package.json`
+		)
+
+		if (result !== false) {
+			return true
+		}
+	}
+
+	return false
 }
 
 export async function validateProjectRoot(
