@@ -49,9 +49,9 @@ export async function validateProjectRoot(
 		`@enkore-target/${projectConfig.target.name}`
 	]
 
-	if (checkIfEnkorePackageIsInstalled(projectRoot, `${targetPackageName}`) === false) {
+	if (checkIfEnkorePackageIsInstalled(projectRoot, targetPackageName) === false) {
 		throw new Error(
-			`The '${targetPackageName}' package is not installed at the project root.\n` +
+			`The '${targetPackageName[1]}' package is not installed at the project root.\n` +
 			`Please make sure you have it installed.`
 		)
 	}
