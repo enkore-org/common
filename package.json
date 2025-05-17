@@ -11,7 +11,7 @@
   "type": "module",
   "devDependencies": {
     "@aniojs/node-fs": "^0.5.3",
-    "@asint/enkore__spec": "^0.270.0",
+    "@asint/enkore__spec": "^0.271.0",
     "@enkore-target/js-node": "^0.0.24",
     "@enkore/core": "^0.7.4",
     "enkore": "^0.0.37"
