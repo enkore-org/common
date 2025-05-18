@@ -10,10 +10,10 @@
   },
   "type": "module",
   "devDependencies": {
+    "@anio-software/enkore.spec": "^0.273.0",
     "@aniojs/node-fs": "^0.5.3",
     "@asint/enkore": "^0.0.44",
     "@asint/enkore__core": "^0.8.6",
-    "@asint/enkore__spec": "^0.272.0",
     "@asint/enkore-target__js-node": "^0.0.28"
   }
 }
