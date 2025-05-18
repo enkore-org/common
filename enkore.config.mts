@@ -21,18 +21,12 @@ export const config: unknown = createConfig({
 			},
 
 			packageSourceRegistryByScope: {
-				"@asint": {
-					registry: "anioSoftware"
-				},
 				"@anio-software": {
 					registry: "anioSoftware"
 				}
 			},
 
 			publish: [{
-				packageName: "@asint/enkore__common",
-				registry: "anioSoftware"
-			}, {
 				packageName: "@anio-software/enkore.common",
 				registry: "anioSoftware"
 			}]
