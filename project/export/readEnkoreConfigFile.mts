@@ -1,7 +1,7 @@
 import {
 	type EnkoreConfig,
 	isEntityOfKind
-} from "@anio-software/enkore.spec"
+} from "@anio-software/enkore-private.spec"
 import path from "node:path"
 
 export async function readEnkoreConfigFile(
