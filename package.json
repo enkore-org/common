@@ -1,5 +1,5 @@
 {
-  "name": "@enkore/common",
+  "name": "@anio-software/enkore.common",
   "version": "0.0.127",
   "author": "Anio Software <info@anio.software>",
   "description": "Code that is shared among enkore packages.",
