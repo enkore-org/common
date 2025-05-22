@@ -13,6 +13,7 @@
     "@anio-software/enkore": "^0.0.61",
     "@anio-software/enkore-private.spec": "^0.282.1",
     "@anio-software/enkore.core": "^0.10.0",
+    "@anio-software/enkore.target-js": "^0.0.2-canary-69353116-2276e5c2",
     "@aniojs/node-fs": "^0.5.3"
   }
 }
