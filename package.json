@@ -11,7 +11,7 @@
   "type": "module",
   "devDependencies": {
     "@anio-software/enkore": "^0.0.56",
-    "@anio-software/enkore-private.spec": "^0.280.0",
+    "@anio-software/enkore-private.spec": "^0.281.0",
     "@anio-software/enkore.core": "^0.10.0",
     "@anio-software/enkore.target-js-node": "^0.0.40-canary-702a983e-659d1061",
     "@aniojs/node-fs": "^0.5.3"
