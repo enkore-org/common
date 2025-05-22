@@ -10,7 +10,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "@anio-software/enkore": "^0.0.56",
+    "@anio-software/enkore": "^0.0.61",
     "@anio-software/enkore-private.spec": "^0.282.1",
     "@anio-software/enkore.core": "^0.10.0",
     "@aniojs/node-fs": "^0.5.3"
